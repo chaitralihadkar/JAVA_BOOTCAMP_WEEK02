@@ -1,0 +1,39 @@
+class Book
+{
+    String title;
+    String author ;
+    int pages ;
+
+    public Book(String title,String author,
+                int pages )
+    {
+        this.title = title;
+        this.author = author;
+        this.pages=pages;
+    }
+
+    public Book(String title ,
+                String author)
+    {
+        this.title = title;
+        this.author = author;
+    }
+
+    public String toString()
+    {
+        return("Title:" + title +"  Author:"+author+"  Pages:"+ pages);
+    }
+}
+
+public class BookDemo
+{
+    public static void main(String[] args)
+    {
+        Book obj = new Book("Target","Prakash",867);
+
+        Book obj1 = new Book("Ship","John");
+
+        System.out.println(obj);
+        System.out.println(obj1);
+    }
+}
